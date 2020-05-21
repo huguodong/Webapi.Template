@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+		<Nullable>annotations</Nullable>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<NoWarn>1701;1702;1591</NoWarn>
+		<DocumentationFile>..\Webapi.Core\Webapi.Core\Webapi.Core.Model.xml</DocumentationFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="sqlSugarCore" Version="5.0.0.14" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Enity\" />
+	  <Folder Include="ViewModel\" />
+	</ItemGroup>
+
+</Project>
